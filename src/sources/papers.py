@@ -29,6 +29,7 @@ def analyser(donnees: list[dict], depuis: datetime) -> list[dict]:
             "score": int(paper.get("upvotes") or 0),
             "detail": detail,
             "lien_discussion": f"https://arxiv.org/abs/{identifiant}",
+            "image": element.get("thumbnail") or "",
         })
     papers.sort(key=lambda p: p["score"], reverse=True)
     return papers[:NOMBRE]

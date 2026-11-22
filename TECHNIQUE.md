@@ -19,7 +19,7 @@ Chaque source est indépendante : si l'une est en panne, l'édition paraît avec
 - Papers : les 8 plus votés parmi ceux mis en avant dans les 4 derniers jours.
 - Discussions : sujets de plus de 100 points dont le titre parle d'IA, les 8 plus votés.
 - Repos : créés dans les 14 derniers jours, plus de 50 étoiles, sur les sujets `llm`, `ai-agents`, `generative-ai`, `rag` et `machine-learning`, les 8 plus étoilés.
-- L'essentiel : la discussion la plus suivie, le paper le plus voté, le repo le plus étoilé, l'article de labo le plus récent et l'article en français le plus récent.
+- L'essentiel : avec une vignette quand la source en fournit une (image du flux RSS, vignette Hugging Face, carte d'aperçu GitHub). Les images sont affichées depuis le site d'origine, jamais copiées dans le dépôt. On y trouve la discussion la plus suivie, le paper le plus voté, le repo le plus étoilé, l'article de labo le plus récent et l'article en français le plus récent.
 - Un lien déjà paru dans une édition précédente n'est jamais repris (voir `data/historique.csv`).
 
 ## Structure

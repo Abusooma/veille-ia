@@ -41,6 +41,7 @@ def analyser(donnees: dict) -> list[dict]:
             "score": int(hit.get("points") or 0),
             "detail": f"{int(hit.get('num_comments') or 0)} commentaires",
             "lien_discussion": lien_hn,
+            "image": "",
         })
     discussions.sort(key=lambda d: d["score"], reverse=True)
     return discussions[:NOMBRE]

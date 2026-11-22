@@ -94,7 +94,7 @@ def test_readme(tmp_path):
     assert "**Édition du 22 novembre 2026**" in texte
     assert "## Papers du moment" in texte
     assert "- [20 novembre 2026](editions/2026-11-20.md)" in texte
-    assert "<img" not in texte  # pas d'image tant que assets/banniere.png n'existe pas
+    assert "assets/banniere.png" not in texte  # pas de bannière tant que le fichier n'existe pas
     (tmp_path / "assets").mkdir()
     (tmp_path / "assets" / "banniere.png").write_bytes(b"x")
     assert '<img src="assets/banniere.png"' in page.readme(_tout(), "2026-11-22", [], tmp_path)
@@ -122,9 +122,26 @@ def test_essentiel_et_sommaire(tmp_path):
     elements[0] = {**elements[0], "source": "OpenAI"}
     texte = page.readme(elements, "2026-11-22", [], tmp_path)
     assert "## L'essentiel" in texte
-    assert "- **Discussion** : [Show HN: An open-source AI agent for data analysis](https://exemple.org/agent) · 312 points sur Hacker News" in texte
-    assert "- **Repo** : [exemple/agent-kit]" in texte
-    assert "- **Annonce** : [Introducing a new model]" in texte
+    assert '<b><a href="https://exemple.org/agent">Show HN: An open-source AI agent for data analysis</a></b>' in texte
+    assert "312 points sur Hacker News" in texte
+    assert '<img src="https://opengraph.githubassets.com/1/exemple/agent-kit" width="160"' in texte
+    assert '<td colspan="2" valign="top"><sub>DISCUSSION</sub>' in texte  # Hacker News : pas de vignette
+    assert "| 20 nov. 2026 |" in texte
+    assert "<sub>ANNONCE</sub><br><b>" in texte and "Introducing a new model" in texte
     assert "[L'essentiel](#essentiel) · [À lire](#a-lire) · [Papers du moment](#papers)" in texte
     assert page.SIGNATURE in texte
     assert "Tunis" not in texte
+
+
+
+def test_images_des_sources():
+    xml = b"""<?xml version="1.0"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>t</title>
+    <item><title>Avec image</title><link>https://a.fr/1</link><pubDate>Fri, 20 Nov 2026 10:00:00 GMT</pubDate>
+    <media:content url="https://a.fr/img.jpg" medium="image" type="image/jpeg"/></item>
+    <item><title>Sans image</title><link>https://a.fr/2</link><pubDate>Fri, 20 Nov 2026 09:00:00 GMT</pubDate></item>
+    </channel></rss>"""
+    articles = flux.analyser(xml, {"source": "A"}, DEPUIS)
+    assert [a["image"] for a in articles] == ["https://a.fr/img.jpg", ""]
+    donnees = _json("daily_papers.json")
+    donnees[0]["thumbnail"] = "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.26239.png"
+    assert papers.analyser(donnees, DEPUIS)[0]["image"].endswith("2611.26239.png")

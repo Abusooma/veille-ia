@@ -32,6 +32,23 @@ def _date(entree) -> datetime | None:
     return None
 
 
+_IMG = re.compile(r"""<img[^>]+src=["']([^"']+)["']""", re.IGNORECASE)
+
+
+def image(entree) -> str:
+    """Image d'illustration fournie par le flux, s'il y en a une."""
+    for champ in ("media_content", "media_thumbnail"):
+        for media in entree.get(champ) or []:
+            url = media.get("url", "")
+            if url and media.get("medium", "image") == "image":
+                return url
+    for lien in entree.get("links") or []:
+        if lien.get("rel") == "enclosure" and str(lien.get("type", "")).startswith("image/"):
+            return lien.get("href", "")
+    trouve = _IMG.search(entree.get("summary") or "")
+    return trouve.group(1) if trouve else ""
+
+
 def analyser(contenu: bytes | str, config: dict, depuis: datetime) -> list[dict]:
     flux = feedparser.parse(contenu)
     exclure_titre = re.compile(config["exclure_titre"]) if config.get("exclure_titre") else None
@@ -54,6 +71,7 @@ def analyser(contenu: bytes | str, config: dict, depuis: datetime) -> list[dict]
             "score": 0,
             "detail": "",
             "lien_discussion": "",
+            "image": image(entree),
         })
     articles.sort(key=lambda a: a["publie_le"], reverse=True)
     return articles[:MAX_PAR_SOURCE]

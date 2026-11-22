@@ -29,7 +29,7 @@ DOSSIER_EDITIONS = RACINE / "editions"
 FICHIER_README = RACINE / "README.md"
 FICHIER_MESSAGE = RACINE / ".commit_msg"
 
-COLONNES = ["edition", "categorie", "source", "titre", "url", "publie_le", "score", "detail", "lien_discussion"]
+COLONNES = ["edition", "categorie", "source", "titre", "url", "publie_le", "score", "detail", "lien_discussion", "image"]
 
 # On remonte jusqu'à 4 jours en arrière : couvre l'intervalle de 2 jours avec une marge,
 # les doublons étant écartés grâce à l'historique.

@@ -3,7 +3,11 @@
 from __future__ import annotations
 
 from datetime import date
+from html import escape
 from pathlib import Path
+
+MOIS_COURTS = ["janv.", "févr.", "mars", "avr.", "mai", "juin",
+               "juil.", "août", "sept.", "oct.", "nov.", "déc."]
 
 MOIS = [
     "janvier", "février", "mars", "avril", "mai", "juin",
@@ -41,6 +45,12 @@ def date_fr(iso: str) -> str:
     return f"{'1er' if jour == 1 else jour} {MOIS[mois - 1]} {annee}"
 
 
+def date_courte(iso: str) -> str:
+    """'2026-11-20' -> '20 nov. 2026'."""
+    annee, mois, jour = (int(x) for x in iso.split("-"))
+    return f"{'1er' if jour == 1 else jour} {MOIS_COURTS[mois - 1]} {annee}"
+
+
 def _propre(texte: str) -> str:
     return texte.replace("|", "/").replace("[", "(").replace("]", ")")
 
@@ -48,7 +58,7 @@ def _propre(texte: str) -> str:
 def _ligne(e: dict) -> str:
     titre = f"[{_propre(e['titre'])}]({e['url']})"
     if e["categorie"] in ("articles", "francais"):
-        return f"| {titre} | {e['source']} | {date_fr(e['publie_le'])} |"
+        return f"| {titre} | {e['source']} | {date_courte(e['publie_le'])} |"
     if e["categorie"] == "papers":
         extra = f" · {e['detail']}" if e["detail"] else ""
         return f"| {titre} | {e['score']} votes{extra} | [arXiv]({e['lien_discussion']}) |"
@@ -70,24 +80,46 @@ LABOS = ["Google DeepMind", "OpenAI", "Google Research", "Hugging Face"]
 
 
 def essentiel(elements: list[dict]) -> list[str]:
-    """Cinq lignes pour le lecteur pressé : le plus marquant de chaque rubrique."""
+    """Cinq liens pour le lecteur pressé, avec une vignette quand la source en fournit une.
+
+    Les images sont affichées depuis le site d'origine, jamais copiées dans le dépôt.
+    """
     def premier(categorie, cle):
         choix = [e for e in elements if e["categorie"] == categorie]
         return max(choix, key=cle) if choix else None
 
     annonces = [e for e in elements if e["categorie"] == "articles" and e["source"] in LABOS]
-    annonce = max(annonces, key=lambda e: (e["publie_le"], -LABOS.index(e["source"]))) if annonces else None
+    annonce = max(
+        annonces, key=lambda e: (e["publie_le"], bool(e.get("image")), -LABOS.index(e["source"]))
+    ) if annonces else None
     choix = [
         ("Discussion", premier("discussions", lambda e: int(e["score"])), lambda e: f"{e['score']} points sur Hacker News"),
-        ("Paper", premier("papers", lambda e: int(e["score"])), lambda e: f"{e['score']} votes"),
-        ("Repo", premier("repos", lambda e: int(e["score"])), lambda e: f"{e['score']} étoiles"),
+        ("Paper", premier("papers", lambda e: int(e["score"])), lambda e: f"{e['score']} votes sur Hugging Face"),
+        ("Repo", premier("repos", lambda e: int(e["score"])), lambda e: f"{e['score']} étoiles sur GitHub"),
         ("Annonce", annonce, lambda e: e["source"]),
-        ("En français", premier("francais", lambda e: e["publie_le"]), lambda e: e["source"]),
+        ("En français", premier("francais", lambda e: (e["publie_le"], bool(e.get("image")))), lambda e: e["source"]),
     ]
-    lignes = [f"- **{nom}** : [{_propre(e['titre'])}]({e['url']}) · {info(e)}" for nom, e, info in choix if e]
+    lignes = []
+    for nom, e, info in choix:
+        if not e:
+            continue
+        url = escape(e["url"])
+        texte = (
+            f'<sub>{escape(nom.upper())}</sub><br>'
+            f'<b><a href="{url}">{escape(e["titre"])}</a></b><br>'
+            f"<sub>{escape(info(e))}</sub>"
+        )
+        if e.get("image"):
+            cellules = [
+                f'<td width="176" valign="top"><a href="{url}"><img src="{escape(e["image"])}" width="160" alt=""></a></td>',
+                f'<td valign="top">{texte}</td>',
+            ]
+        else:  # pas d'image : le texte prend toute la largeur
+            cellules = [f'<td colspan="2" valign="top">{texte}</td>']
+        lignes += ["<tr>", *cellules, "</tr>"]
     if not lignes:
         return []
-    return ['<a name="essentiel"></a>', "", "## L'essentiel", "", *lignes, ""]
+    return ['<a name="essentiel"></a>', "", "## L'essentiel", "", "<table>", *lignes, "</table>", ""]
 
 
 def sommaire(elements: list[dict]) -> str:

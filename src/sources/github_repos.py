@@ -28,6 +28,8 @@ def analyser(donnees: dict) -> list[dict]:
             "score": int(repo.get("stargazers_count") or 0),
             "detail": " · ".join(x for x in [repo.get("language") or "", description] if x),
             "lien_discussion": "",
+            # Carte d'aperçu générée par GitHub pour chaque repo.
+            "image": f"https://opengraph.githubassets.com/1/{repo['full_name']}",
         })
     return repos
 

@@ -9,6 +9,7 @@
     "score": nombre (votes, points, étoiles) ou 0,
     "detail": courte information complémentaire (langage, nombre de commentaires...),
     "lien_discussion": lien secondaire éventuel,
+    "image": adresse d'une image d'illustration hébergée par la source, ou "",
 }
 """
 
