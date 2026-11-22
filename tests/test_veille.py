@@ -17,14 +17,14 @@ def _json(nom):
 # ------------------------------------------------------------------- Flux
 
 def test_rss_garde_les_articles_recents():
-    articles = flux.analyser((FIXTURES / "rss.xml").read_bytes(), "Blog", DEPUIS)
+    articles = flux.analyser((FIXTURES / "rss.xml").read_bytes(), {"source": "Blog"}, DEPUIS)
     assert [a["url"] for a in articles] == ["https://exemple.org/nouveau-modele", "https://exemple.org/client"]
     assert articles[0]["publie_le"] == "2026-11-20"
     assert articles[0]["categorie"] == "articles"
 
 
 def test_atom():
-    articles = flux.analyser((FIXTURES / "atom.xml").read_bytes(), "Weblog", DEPUIS)
+    articles = flux.analyser((FIXTURES / "atom.xml").read_bytes(), {"source": "Weblog"}, DEPUIS)
     assert len(articles) == 1
     assert articles[0]["url"] == "https://blog.exemple.org/2026/Nov/20/llm-local/"
 
@@ -68,7 +68,7 @@ def test_repos():
 
 def _tout():
     return (
-        flux.analyser((FIXTURES / "rss.xml").read_bytes(), "Blog", DEPUIS)
+        flux.analyser((FIXTURES / "rss.xml").read_bytes(), {"source": "Blog"}, DEPUIS)
         + papers.analyser(_json("daily_papers.json"), DEPUIS)
         + hacker_news.analyser(_json("hn.json"))
         + github_repos.analyser(_json("github.json"))
@@ -102,3 +102,29 @@ def test_readme(tmp_path):
 
 def test_edition_vide():
     assert "Rien de nouveau" in page.edition([], "2026-11-22")
+
+
+
+def test_exclusions_et_francais():
+    config = {"source": "Blog", "exclure_url": r"/client", "francais": True}
+    articles = flux.analyser((FIXTURES / "rss.xml").read_bytes(), config, DEPUIS)
+    assert [a["url"] for a in articles] == ["https://exemple.org/nouveau-modele"]
+    assert articles[0]["categorie"] == "francais"
+    simon = next(f for f in flux.FLUX if f["source"] == "Simon Willison")
+    import re
+    assert re.search(simon["exclure_titre"], "Quoting Ravi Vakil")
+    assert re.search(simon["exclure_titre"], "llm-gemini 0.38.1")
+    assert not re.search(simon["exclure_titre"], "Notes on running LLMs locally")
+
+
+def test_essentiel_et_sommaire(tmp_path):
+    elements = _tout()
+    elements[0] = {**elements[0], "source": "OpenAI"}
+    texte = page.readme(elements, "2026-11-22", [], tmp_path)
+    assert "## L'essentiel" in texte
+    assert "- **Discussion** : [Show HN: An open-source AI agent for data analysis](https://exemple.org/agent) · 312 points sur Hacker News" in texte
+    assert "- **Repo** : [exemple/agent-kit]" in texte
+    assert "- **Annonce** : [Introducing a new model]" in texte
+    assert "[L'essentiel](#essentiel) · [À lire](#a-lire) · [Papers du moment](#papers)" in texte
+    assert page.SIGNATURE in texte
+    assert "Tunis" not in texte

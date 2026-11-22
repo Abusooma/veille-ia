@@ -10,11 +10,15 @@ MOIS = [
     "juillet", "août", "septembre", "octobre", "novembre", "décembre",
 ]
 
+SIGNATURE = "Veille préparée par [Aboubacar](https://github.com/Abusooma), développeur et formateur."
+
+# (catégorie, ancre, titre, phrase d'introduction)
 SECTIONS = [
-    ("articles", "À lire", "Les dernières publications des labos et des blogs spécialisés."),
-    ("papers", "Papers du moment", "Les papers de recherche les plus votés par la communauté Hugging Face."),
-    ("discussions", "Discussions", "Les sujets IA qui font réagir sur Hacker News."),
-    ("repos", "Repos à suivre", "Des repos IA récents qui gagnent vite des étoiles sur GitHub."),
+    ("articles", "a-lire", "À lire", "Les dernières publications des labos et des blogs spécialisés."),
+    ("francais", "en-francais", "En français", "L'actualité de l'IA dans la presse spécialisée francophone."),
+    ("papers", "papers", "Papers du moment", "Les papers de recherche les plus votés par la communauté Hugging Face."),
+    ("discussions", "discussions", "Discussions", "Les sujets IA qui font réagir sur Hacker News."),
+    ("repos", "repos", "Repos à suivre", "Des repos IA récents qui gagnent vite des étoiles sur GitHub."),
 ]
 
 SOURCES_SUIVIES = [
@@ -43,7 +47,7 @@ def _propre(texte: str) -> str:
 
 def _ligne(e: dict) -> str:
     titre = f"[{_propre(e['titre'])}]({e['url']})"
-    if e["categorie"] == "articles":
+    if e["categorie"] in ("articles", "francais"):
         return f"| {titre} | {e['source']} | {date_fr(e['publie_le'])} |"
     if e["categorie"] == "papers":
         extra = f" · {e['detail']}" if e["detail"] else ""
@@ -55,31 +59,64 @@ def _ligne(e: dict) -> str:
 
 ENTETES = {
     "articles": ["| Article | Source | Date |", "|---|---|---|"],
+    "francais": ["| Article | Source | Date |", "|---|---|---|"],
     "papers": ["| Paper | Votes | Lien |", "|---|---|---|"],
     "discussions": ["| Sujet | Points | Discussion |", "|---|---|---|"],
     "repos": ["| Repo | Étoiles | Description |", "|---|---|---|"],
 }
 
 
+LABOS = ["Google DeepMind", "OpenAI", "Google Research", "Hugging Face"]
+
+
+def essentiel(elements: list[dict]) -> list[str]:
+    """Cinq lignes pour le lecteur pressé : le plus marquant de chaque rubrique."""
+    def premier(categorie, cle):
+        choix = [e for e in elements if e["categorie"] == categorie]
+        return max(choix, key=cle) if choix else None
+
+    annonces = [e for e in elements if e["categorie"] == "articles" and e["source"] in LABOS]
+    annonce = max(annonces, key=lambda e: (e["publie_le"], -LABOS.index(e["source"]))) if annonces else None
+    choix = [
+        ("Discussion", premier("discussions", lambda e: int(e["score"])), lambda e: f"{e['score']} points sur Hacker News"),
+        ("Paper", premier("papers", lambda e: int(e["score"])), lambda e: f"{e['score']} votes"),
+        ("Repo", premier("repos", lambda e: int(e["score"])), lambda e: f"{e['score']} étoiles"),
+        ("Annonce", annonce, lambda e: e["source"]),
+        ("En français", premier("francais", lambda e: e["publie_le"]), lambda e: e["source"]),
+    ]
+    lignes = [f"- **{nom}** : [{_propre(e['titre'])}]({e['url']}) · {info(e)}" for nom, e, info in choix if e]
+    if not lignes:
+        return []
+    return ['<a name="essentiel"></a>', "", "## L'essentiel", "", *lignes, ""]
+
+
+def sommaire(elements: list[dict]) -> str:
+    liens = ["[L'essentiel](#essentiel)"] if elements else []
+    for categorie, ancre, titre, _ in SECTIONS:
+        if any(e["categorie"] == categorie for e in elements):
+            liens.append(f"[{titre}](#{ancre})")
+    return " · ".join(liens)
+
+
 def corps_edition(elements: list[dict]) -> list[str]:
-    lignes = []
-    for categorie, titre, intro in SECTIONS:
+    lignes = essentiel(elements)
+    for categorie, ancre, titre, intro in SECTIONS:
         choisis = [e for e in elements if e["categorie"] == categorie]
         if not choisis:
             continue
-        lignes += [f"## {titre}", "", intro, "", *ENTETES[categorie], *map(_ligne, choisis), ""]
+        lignes += [f'<a name="{ancre}"></a>', "", f"## {titre}", "", intro, "",
+                   *ENTETES[categorie], *map(_ligne, choisis), ""]
     if not lignes:
         lignes = ["Rien de nouveau depuis la dernière édition.", ""]
     return lignes
 
 
 def _resume(elements: list[dict]) -> str:
-    compte = {c: len([e for e in elements if e["categorie"] == c]) for c, _, _ in SECTIONS}
-    morceaux = [
-        f"{compte['articles']} articles", f"{compte['papers']} papers",
-        f"{compte['discussions']} discussions", f"{compte['repos']} repos",
-    ]
-    return " · ".join(morceaux)
+    compte = lambda *cats: len([e for e in elements if e["categorie"] in cats])  # noqa: E731
+    return " · ".join([
+        f"{compte('articles', 'francais')} articles", f"{compte('papers')} papers",
+        f"{compte('discussions')} discussions", f"{compte('repos')} repos",
+    ])
 
 
 def edition(elements: list[dict], jour: str) -> str:
@@ -88,6 +125,8 @@ def edition(elements: list[dict], jour: str) -> str:
         f"# Veille IA du {date_fr(jour)}",
         "",
         f"**{_resume(elements)}**",
+        "",
+        sommaire(elements),
         "",
         *corps_edition(elements),
         "[Retour à la dernière édition](../README.md)",
@@ -106,7 +145,11 @@ def readme(elements: list[dict], jour: str, archives: list[str], racine: Path) -
         "les publications des labos, les papers de recherche les plus suivis, les discussions du moment "
         "et les repos qui montent.",
         "",
+        SIGNATURE,
+        "",
         f"**Édition du {date_fr(jour)}** · {_resume(elements)}",
+        "",
+        sommaire(elements),
         "",
         *corps_edition(elements),
     ]

@@ -17,8 +17,8 @@ def analyser(donnees: dict) -> list[dict]:
     repos = []
     for repo in donnees.get("items", []):
         description = " ".join((repo.get("description") or "").split())
-        if len(description) > 140:
-            description = description[:137].rsplit(" ", 1)[0] + "..."
+        if len(description) > 90:
+            description = description[:87].rsplit(" ", 1)[0] + "..."
         repos.append({
             "categorie": "repos",
             "source": "GitHub",

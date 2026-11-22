@@ -65,9 +65,9 @@ def ecrire_historique(historique: list[dict], elements: list[dict], jour: str) -
 
 
 def message_commit(jour: str, elements: list[dict]) -> str:
-    compte = lambda c: len([e for e in elements if e["categorie"] == c])  # noqa: E731
+    compte = lambda *cats: len([e for e in elements if e["categorie"] in cats])  # noqa: E731
     return (
-        f"veille: édition du {jour} ({compte('articles')} articles, {compte('papers')} papers, "
+        f"veille: édition du {jour} ({compte('articles', 'francais')} articles, {compte('papers')} papers, "
         f"{compte('discussions')} discussions, {compte('repos')} repos)"
     )
 
