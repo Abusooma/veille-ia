@@ -96,11 +96,11 @@ Des repos IA récents qui gagnent vite des étoiles sur GitHub.
 |---|---|---|
 | [bookwjitchieni1986/blender-ai-mcp-addon](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) | 2741 étoiles | AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent... |
 | [agentes-chat/agentes-chat](https://github.com/agentes-chat/agentes-chat) | 1928 étoiles | TypeScript · Open-source, self-hosted Slack alternative where your team and AI agents work together... |
-| [sybil-solutions/inference-optimisation-skill](https://github.com/sybil-solutions/inference-optimisation-skill) | 1874 étoiles | Python · Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding,... |
-| [JosssphZhou/poki](https://github.com/JosssphZhou/poki) | 1815 étoiles | Swift · Poki uses your iPhone like you do. An open-source agent app that runs on your iPhone,... |
+| [sybil-solutions/inference-optimisation-skill](https://github.com/sybil-solutions/inference-optimisation-skill) | 1875 étoiles | Python · Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding,... |
+| [JosssphZhou/poki](https://github.com/JosssphZhou/poki) | 1816 étoiles | Swift · Poki uses your iPhone like you do. An open-source agent app that runs on your iPhone,... |
 | [voyager-so/vork](https://github.com/voyager-so/vork) | 1685 étoiles | Rust · Headless 3D and VFX engine for agents. Research preview. |
 | [alexeyw/lot-map](https://github.com/alexeyw/lot-map) | 1118 étoiles | TypeScript · Lot Map for Claude Code: a live map beside the chat that shows what the agent is... |
-| [EL4CTEO/fast-anything](https://github.com/EL4CTEO/fast-anything) | 1097 étoiles | Rust · Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby... |
+| [EL4CTEO/fast-anything](https://github.com/EL4CTEO/fast-anything) | 1099 étoiles | Rust · Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby... |
 | [dabingfy-dot/solo-to-team-skills](https://github.com/dabingfy-dot/solo-to-team-skills) | 1094 étoiles | HTML · Human-led MAS toolkit: 16 roles, 6 group templates, four platform bundles,... |
 
 <details>
