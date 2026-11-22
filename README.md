@@ -1,12 +1,29 @@
-# Veille IA
+<div align="center">
 
-Une sélection de lectures sur l'intelligence artificielle, mise à jour tous les deux jours : les publications des labos, les papers de recherche les plus suivis, les discussions du moment et les repos qui montent.
+<h1>Veille IA</h1>
 
-Veille préparée par [Aboubacar](https://github.com/Abusooma), développeur et formateur.
+<p><b>Les lectures IA à ne pas manquer, réunies tous les deux jours.</b></p>
 
-**Édition du 22 novembre 2026** · 16 articles · 8 papers · 8 discussions · 8 repos
+<p>Annonces des labos · Papers de recherche · Discussions · Repos GitHub · Actualité en français</p>
 
-[L'essentiel](#essentiel) · [À lire](#a-lire) · [En français](#en-francais) · [Papers du moment](#papers) · [Discussions](#discussions) · [Repos à suivre](#repos)
+<p><sub>ÉDITION DU 22 NOVEMBRE 2026</sub></p>
+
+<table>
+<tr>
+<td align="center" width="140"><h3>16</h3><sub>articles</sub></td>
+<td align="center" width="140"><h3>8</h3><sub>papers</sub></td>
+<td align="center" width="140"><h3>8</h3><sub>discussions</sub></td>
+<td align="center" width="140"><h3>8</h3><sub>repos</sub></td>
+</tr>
+</table>
+
+<p><sub>Sélection préparée par <a href="https://github.com/Abusooma"><b>Aboubacar</b></a><br>AI Product Builder · Computer Science Engineering Graduate · Formateur</sub></p>
+
+</div>
+
+---
+
+<p align="center"><a href="#essentiel">L'essentiel</a> · <a href="#a-lire">À lire</a> · <a href="#en-francais">En français</a> · <a href="#papers">Papers du moment</a> · <a href="#discussions">Discussions</a> · <a href="#repos">Repos à suivre</a></p>
 
 <a name="essentiel"></a>
 
@@ -22,11 +39,10 @@ Veille préparée par [Aboubacar](https://github.com/Abusooma), développeur et 
 </tr>
 <tr>
 <td width="176" valign="top"><a href="https://github.com/bookwjitchieni1986/blender-ai-mcp-addon"><img src="https://opengraph.githubassets.com/1/bookwjitchieni1986/blender-ai-mcp-addon" width="160" alt=""></a></td>
-<td valign="top"><sub>REPO</sub><br><b><a href="https://github.com/bookwjitchieni1986/blender-ai-mcp-addon">bookwjitchieni1986/blender-ai-mcp-addon</a></b><br><sub>2742 étoiles sur GitHub</sub></td>
+<td valign="top"><sub>REPO</sub><br><b><a href="https://github.com/bookwjitchieni1986/blender-ai-mcp-addon">bookwjitchieni1986/blender-ai-mcp-addon</a></b><br><sub>2744 étoiles sur GitHub</sub></td>
 </tr>
 <tr>
-<td width="176" valign="top"><a href="https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/"><img src="https://storage.googleapis.com/gweb-research2023-media/original_images/Duplex1-TasksInGeminiHero.png" width="160" alt=""></a></td>
-<td valign="top"><sub>ANNONCE</sub><br><b><a href="https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/">How Google Duplex evolved to also call businesses for you in Gemini</a></b><br><sub>Google Research</sub></td>
+<td colspan="2" valign="top"><sub>ANNONCE</sub><br><b><a href="https://openai.com/index/perplexity-and-intelligence">Perplexity and Intelligence</a></b><br><sub>OpenAI</sub></td>
 </tr>
 <tr>
 <td width="176" valign="top"><a href="https://www.actuia.com/actualite/mistral-fait-de-singapour-son-siege-asie-pacifique-et-un-pole-de-recherche/"><img src="https://www.actuia.com/storage/uploads/generated/11608-iev1hbrn-1200.jpg" width="160" alt=""></a></td>
@@ -42,9 +58,9 @@ Les dernières publications des labos et des blogs spécialisés.
 
 | Article | Source | Date |
 |---|---|---|
+| [Perplexity and Intelligence](https://openai.com/index/perplexity-and-intelligence) | OpenAI | 22 nov. 2026 |
 | [Combatting adversarial distillation](https://openai.com/index/combatting-adversarial-distillation) | OpenAI | 20 nov. 2026 |
 | [Can AI help scientists identify promising drug candidates?](https://openai.com/index/introducing-medchembench) | OpenAI | 20 nov. 2026 |
-| [How OpenAI’s Performance Factory keeps ChatGPT fast](https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast) | OpenAI | 19 nov. 2026 |
 | [Introducing Gemini 4 Neon](https://deepmind.google/blog/introducing-gemini-4-neon/) | Google DeepMind | 18 nov. 2026 |
 | [Genie 4 is now available](https://deepmind.google/blog/genie-4-is-now-available/) | Google DeepMind | 18 nov. 2026 |
 | [How Google Duplex evolved to also call businesses for you in Gemini](https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/) | Google Research | 20 nov. 2026 |
@@ -79,7 +95,7 @@ Les papers de recherche les plus votés par la communauté Hugging Face.
 | [WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection](https://huggingface.co/papers/2611.21373) | 56 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.21373) |
 | [Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation](https://huggingface.co/papers/2611.26444) | 53 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.26444) |
 | [WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding](https://huggingface.co/papers/2611.26409) | 45 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.26409) |
-| [Probing the "Conscious" Mind: Selective Access and Global Workspace in Vision-Language Models](https://huggingface.co/papers/2611.26590) | 42 votes | [arXiv](https://arxiv.org/abs/2611.26590) |
+| [Probing the "Conscious" Mind: Selective Access and Global Workspace in Vision-Language Models](https://huggingface.co/papers/2611.26590) | 43 votes | [arXiv](https://arxiv.org/abs/2611.26590) |
 | [Posterior Matching Distillation](https://huggingface.co/papers/2611.26629) | 39 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.26629) |
 | [Coda-DaVinci: Reimagining Video Generation with Code2Video](https://huggingface.co/papers/2611.26595) | 38 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.26595) |
 | [Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth](https://huggingface.co/papers/2611.26603) | 33 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.26603) |
@@ -93,14 +109,14 @@ Les sujets IA qui font réagir sur Hacker News.
 
 | Sujet | Points | Discussion |
 |---|---|---|
-| [Anthropic’s Nasdaq debut](https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/) | 1140 points | [2326 commentaires](https://news.ycombinator.com/item?id=50562754) |
-| [Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) | 1063 points | [775 commentaires](https://news.ycombinator.com/item?id=50552424) |
-| [Frostbite: A new CPU architecture discovered, designed and verified by AI](https://architectlabs.com/blog/frostbite) | 674 points | [362 commentaires](https://news.ycombinator.com/item?id=50572503) |
+| [Anthropic’s Nasdaq debut](https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/) | 1140 points | [2328 commentaires](https://news.ycombinator.com/item?id=50562754) |
+| [Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) | 1064 points | [775 commentaires](https://news.ycombinator.com/item?id=50552424) |
+| [Frostbite: A new CPU architecture discovered, designed and verified by AI](https://architectlabs.com/blog/frostbite) | 675 points | [362 commentaires](https://news.ycombinator.com/item?id=50572503) |
 | [Fuck Your AI Safeguards](https://ounapuu.ee/posts/2026/11/19/unsafeguards/) | 616 points | [249 commentaires](https://news.ycombinator.com/item?id=50562262) |
-| [Restricting AI agents in mobile operating systems platforms from capturing data](https://signal.org/blog/protecting-your-privacy/) | 577 points | [343 commentaires](https://news.ycombinator.com/item?id=50572348) |
-| [Claude solves two open problems in the physics of black holes](https://www.anthropic.com/research/claude-black-hole-physics) | 572 points | [274 commentaires](https://news.ycombinator.com/item?id=50563148) |
-| [Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day](https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off) | 517 points | [907 commentaires](https://news.ycombinator.com/item?id=50574383) |
-| [AI agents ask better questions than KPMG accountants in audit trial](https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/) | 499 points | [264 commentaires](https://news.ycombinator.com/item?id=50547777) |
+| [Restricting AI agents in mobile operating systems platforms from capturing data](https://signal.org/blog/protecting-your-privacy/) | 577 points | [345 commentaires](https://news.ycombinator.com/item?id=50572348) |
+| [Claude solves two open problems in the physics of black holes](https://www.anthropic.com/research/claude-black-hole-physics) | 573 points | [274 commentaires](https://news.ycombinator.com/item?id=50563148) |
+| [87% of the Anthropic power will come from gas and 11% from coal in 2028](https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/) | 548 points | [620 commentaires](https://news.ycombinator.com/item?id=50597612) |
+| [Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day](https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off) | 523 points | [915 commentaires](https://news.ycombinator.com/item?id=50574383) |
 
 <a name="repos"></a>
 
@@ -110,13 +126,13 @@ Des repos IA récents qui gagnent vite des étoiles sur GitHub.
 
 | Repo | Étoiles | Description |
 |---|---|---|
-| [bookwjitchieni1986/blender-ai-mcp-addon](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) | 2742 étoiles | AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent... |
-| [agentes-chat/agentes-chat](https://github.com/agentes-chat/agentes-chat) | 1928 étoiles | TypeScript · Open-source, self-hosted Slack alternative where your team and AI agents work together... |
-| [sybil-solutions/inference-optimisation-skill](https://github.com/sybil-solutions/inference-optimisation-skill) | 1880 étoiles | Python · Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding,... |
-| [JosssphZhou/poki](https://github.com/JosssphZhou/poki) | 1820 étoiles | Swift · Poki uses your iPhone like you do. An open-source agent app that runs on your iPhone,... |
-| [voyager-so/vork](https://github.com/voyager-so/vork) | 1686 étoiles | Rust · Headless 3D and VFX engine for agents. Research preview. |
-| [EL4CTEO/fast-anything](https://github.com/EL4CTEO/fast-anything) | 1192 étoiles | Rust · Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby... |
-| [alexeyw/lot-map](https://github.com/alexeyw/lot-map) | 1119 étoiles | TypeScript · Lot Map for Claude Code: a live map beside the chat that shows what the agent is... |
+| [bookwjitchieni1986/blender-ai-mcp-addon](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) | 2744 étoiles | AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent... |
+| [agentes-chat/agentes-chat](https://github.com/agentes-chat/agentes-chat) | 1936 étoiles | TypeScript · Open-source, self-hosted Slack alternative where your team and AI agents work together... |
+| [sybil-solutions/inference-optimisation-skill](https://github.com/sybil-solutions/inference-optimisation-skill) | 1911 étoiles | Python · Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding,... |
+| [JosssphZhou/poki](https://github.com/JosssphZhou/poki) | 1829 étoiles | Swift · Poki uses your iPhone like you do. An open-source agent app that runs on your iPhone,... |
+| [voyager-so/vork](https://github.com/voyager-so/vork) | 1687 étoiles | Rust · Headless 3D and VFX engine for agents. Research preview. |
+| [EL4CTEO/fast-anything](https://github.com/EL4CTEO/fast-anything) | 1509 étoiles | Rust · Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby... |
+| [alexeyw/lot-map](https://github.com/alexeyw/lot-map) | 1123 étoiles | TypeScript · Lot Map for Claude Code: a live map beside the chat that shows what the agent is... |
 | [dabingfy-dot/solo-to-team-skills](https://github.com/dabingfy-dot/solo-to-team-skills) | 1094 étoiles | HTML · Human-led MAS toolkit: 16 roles, 6 group templates, four platform bundles,... |
 
 <details>
