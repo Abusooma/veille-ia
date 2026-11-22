@@ -1,0 +1,5 @@
+{"hits": [
+ {"objectID": "48000001", "title": "Show HN: An open-source AI agent for data analysis", "url": "https://exemple.org/agent", "points": 312, "num_comments": 140, "created_at": "2026-11-21T09:00:00Z"},
+ {"objectID": "48000002", "title": "A history of the bicycle", "url": "https://exemple.org/velo", "points": 500, "num_comments": 80, "created_at": "2026-11-21T10:00:00Z"},
+ {"objectID": "48000003", "title": "Ask HN: How do you evaluate LLM outputs?", "points": 150, "num_comments": 95, "created_at": "2026-11-20T15:00:00Z"}
+]}

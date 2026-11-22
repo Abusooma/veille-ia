@@ -1,0 +1,48 @@
+name: Édition de la veille IA
+
+on:
+  schedule:
+    - cron: "41 5 */2 * *"   # tous les deux jours à 06:41 à Tunis et Lagos
+  workflow_dispatch:          # bouton pour lancer à la main depuis l'onglet Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: veille
+  cancel-in-progress: false
+
+jobs:
+  edition:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Préparer l'édition
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python src/veille.py
+
+      - name: Commiter l'édition
+        env:
+          AUTEUR_EMAIL: ${{ secrets.COMMIT_EMAIL }}
+        run: |
+          git config user.name "Abusooma"
+          git config user.email "$AUTEUR_EMAIL"
+          git add data/ editions/ README.md
+          if git diff --cached --quiet; then
+            echo "Rien à commiter."
+          else
+            git commit -F .commit_msg
+            git pull --rebase origin main
+            git push origin main
+          fi

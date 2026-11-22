@@ -1,0 +1,5 @@
+[
+ {"paper": {"id": "2611.26239", "title": "Teaching Vision-Language-Action Models\n  to Stop Safely", "upvotes": 7, "publishedAt": "2026-11-19T00:00:00.000Z", "submittedOnDailyAt": "2026-11-20T00:00:00.000Z", "githubRepo": "https://github.com/x/y"}, "title": "Teaching Vision-Language-Action Models to Stop Safely"},
+ {"paper": {"id": "2611.26232", "title": "Time Series Structure Learning with Local Causal Parent Discovery", "upvotes": 2, "publishedAt": "2026-11-19T00:00:00.000Z", "submittedOnDailyAt": "2026-11-20T00:00:00.000Z"}},
+ {"paper": {"id": "2610.11111", "title": "An older paper", "upvotes": 50, "publishedAt": "2026-10-01T00:00:00.000Z", "submittedOnDailyAt": "2026-10-02T00:00:00.000Z"}}
+]

@@ -1,0 +1,4 @@
+{"items": [
+ {"full_name": "exemple/agent-kit", "html_url": "https://github.com/exemple/agent-kit", "stargazers_count": 1240, "language": "Python", "created_at": "2026-11-15T12:00:00Z", "description": "A lightweight   framework to build AI agents with tools and memory"},
+ {"full_name": "exemple/rag-starter", "html_url": "https://github.com/exemple/rag-starter", "stargazers_count": 310, "language": null, "created_at": "2026-11-12T12:00:00Z", "description": null}
+]}
