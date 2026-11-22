@@ -91,7 +91,8 @@ def test_message_commit():
 
 def test_readme(tmp_path):
     texte = page.readme(_tout(), "2026-11-22", ["2026-11-20", "2026-11-22"], tmp_path)
-    assert "**Édition du 22 novembre 2026**" in texte
+    assert "<sub>ÉDITION DU 22 NOVEMBRE 2026</sub>" in texte
+    assert '<td align="center" width="140"><h3>2</h3><sub>papers</sub></td>' in texte
     assert "## Papers du moment" in texte
     assert "- [20 novembre 2026](editions/2026-11-20.md)" in texte
     assert "assets/banniere.png" not in texte  # pas de bannière tant que le fichier n'existe pas
@@ -128,8 +129,9 @@ def test_essentiel_et_sommaire(tmp_path):
     assert '<td colspan="2" valign="top"><sub>DISCUSSION</sub>' in texte  # Hacker News : pas de vignette
     assert "| 20 nov. 2026 |" in texte
     assert "<sub>ANNONCE</sub><br><b>" in texte and "Introducing a new model" in texte
-    assert "[L'essentiel](#essentiel) · [À lire](#a-lire) · [Papers du moment](#papers)" in texte
-    assert page.SIGNATURE in texte
+    assert '<a href="#essentiel">L\'essentiel</a> · <a href="#a-lire">À lire</a> · <a href="#papers">Papers du moment</a>' in texte
+    assert "AI Product Builder · Computer Science Engineering Graduate · Formateur" in texte
+    assert '<a href="https://github.com/Abusooma"><b>Aboubacar</b></a>' in texte
     assert "Tunis" not in texte
 
 

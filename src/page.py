@@ -14,7 +14,10 @@ MOIS = [
     "juillet", "août", "septembre", "octobre", "novembre", "décembre",
 ]
 
-SIGNATURE = "Veille préparée par [Aboubacar](https://github.com/Abusooma), développeur et formateur."
+# Auteur de la veille, affiché dans l'en-tête.
+AUTEUR = "Aboubacar"
+AUTEUR_LIEN = "https://github.com/Abusooma"
+AUTEUR_TITRES = ["AI Product Builder", "Computer Science Engineering Graduate", "Formateur"]
 
 # (catégorie, ancre, titre, phrase d'introduction)
 SECTIONS = [
@@ -130,6 +133,14 @@ def sommaire(elements: list[dict]) -> str:
     return " · ".join(liens)
 
 
+def sommaire_html(elements: list[dict]) -> str:
+    liens = ['<a href="#essentiel">L\'essentiel</a>'] if elements else []
+    for categorie, ancre, titre, _ in SECTIONS:
+        if any(e["categorie"] == categorie for e in elements):
+            liens.append(f'<a href="#{ancre}">{escape(titre)}</a>')
+    return " · ".join(liens)
+
+
 def corps_edition(elements: list[dict]) -> list[str]:
     lignes = essentiel(elements)
     for categorie, ancre, titre, intro in SECTIONS:
@@ -166,25 +177,49 @@ def edition(elements: list[dict], jour: str) -> str:
     ])
 
 
-def readme(elements: list[dict], jour: str, archives: list[str], racine: Path) -> str:
-    lignes = []
+def _chiffres(elements: list[dict]) -> list[str]:
+    """Quatre chiffres de l'édition, côte à côte."""
+    compte = lambda *cats: len([e for e in elements if e["categorie"] in cats])  # noqa: E731
+    cases = [
+        (compte("articles", "francais"), "articles"),
+        (compte("papers"), "papers"),
+        (compte("discussions"), "discussions"),
+        (compte("repos"), "repos"),
+    ]
+    cellules = [f'<td align="center" width="140"><h3>{n}</h3><sub>{libelle}</sub></td>' for n, libelle in cases]
+    return ["<table>", "<tr>", *cellules, "</tr>", "</table>"]
+
+
+def entete(elements: list[dict], jour: str, racine: Path) -> list[str]:
+    lignes = ['<div align="center">', ""]
     if (racine / IMAGE).exists():
         lignes += [f'<img src="{IMAGE}" width="100%" alt="Veille IA">', ""]
     lignes += [
-        "# Veille IA",
+        "<h1>Veille IA</h1>",
         "",
-        "Une sélection de lectures sur l'intelligence artificielle, mise à jour tous les deux jours : "
-        "les publications des labos, les papers de recherche les plus suivis, les discussions du moment "
-        "et les repos qui montent.",
+        "<p><b>Les lectures IA à ne pas manquer, réunies tous les deux jours.</b></p>",
         "",
-        SIGNATURE,
+        "<p>Annonces des labos · Papers de recherche · Discussions · Repos GitHub · Actualité en français</p>",
         "",
-        f"**Édition du {date_fr(jour)}** · {_resume(elements)}",
+        f"<p><sub>ÉDITION DU {date_fr(jour).upper()}</sub></p>",
         "",
-        sommaire(elements),
+        *_chiffres(elements),
         "",
-        *corps_edition(elements),
+        f'<p><sub>Sélection préparée par <a href="{AUTEUR_LIEN}"><b>{escape(AUTEUR)}</b></a><br>'
+        f'{" · ".join(escape(t) for t in AUTEUR_TITRES)}</sub></p>',
+        "",
+        "</div>",
+        "",
+        "---",
+        "",
+        f'<p align="center">{sommaire_html(elements)}</p>',
+        "",
     ]
+    return lignes
+
+
+def readme(elements: list[dict], jour: str, archives: list[str], racine: Path) -> str:
+    lignes = [*entete(elements, jour, racine), *corps_edition(elements)]
     precedentes = [a for a in sorted(archives, reverse=True) if a != jour][:15]
     if precedentes:
         lignes += ["## Éditions précédentes", ""]

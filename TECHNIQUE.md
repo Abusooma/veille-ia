@@ -37,7 +37,7 @@ data/historique.csv      # tout ce qui a paru, édition par édition
 editions/AAAA-MM-JJ.md   # archive de chaque édition
 ```
 
-Le README est réécrit à chaque édition. Pour changer sa présentation ou la signature (`SIGNATURE`), modifier `src/page.py`.
+Le README est réécrit à chaque édition. Pour changer sa présentation ou la présentation de l'auteur (`AUTEUR`, `AUTEUR_LIEN`, `AUTEUR_TITRES`), modifier `src/page.py`.
 Pour ajouter un blog, ajouter une ligne dans `FLUX` (`src/sources/flux.py`).
 Pour afficher une image en haut de la page, déposer un fichier `assets/banniere.png`.
 
