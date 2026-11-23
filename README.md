@@ -6,14 +6,14 @@
 
 <p>Annonces des labos · Papers de recherche · Discussions · Repos GitHub · Actualité en français</p>
 
-<p><sub>ÉDITION DU 22 NOVEMBRE 2026</sub></p>
+<p><sub>ÉDITION DU 23 NOVEMBRE 2026</sub></p>
 
 <table>
 <tr>
-<td align="center" width="140"><h3>16</h3><sub>articles</sub></td>
-<td align="center" width="140"><h3>8</h3><sub>papers</sub></td>
-<td align="center" width="140"><h3>8</h3><sub>discussions</sub></td>
-<td align="center" width="140"><h3>8</h3><sub>repos</sub></td>
+<td align="center" width="140"><h3>5</h3><sub>articles</sub></td>
+<td align="center" width="140"><h3>6</h3><sub>papers</sub></td>
+<td align="center" width="140"><h3>2</h3><sub>discussions</sub></td>
+<td align="center" width="140"><h3>2</h3><sub>repos</sub></td>
 </tr>
 </table>
 
@@ -31,22 +31,22 @@
 
 <table>
 <tr>
-<td colspan="2" valign="top"><sub>DISCUSSION</sub><br><b><a href="https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/">Anthropic’s Nasdaq debut</a></b><br><sub>1140 points sur Hacker News</sub></td>
+<td colspan="2" valign="top"><sub>DISCUSSION</sub><br><b><a href="https://z.ai/blog/glm-5.4">GLM-5.4: Toward Generalized Coding with Our First Loop Transformer</a></b><br><sub>667 points sur Hacker News</sub></td>
 </tr>
 <tr>
-<td width="176" valign="top"><a href="https://huggingface.co/papers/2611.21373"><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.21373.png" width="160" alt=""></a></td>
-<td valign="top"><sub>PAPER</sub><br><b><a href="https://huggingface.co/papers/2611.21373">WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection</a></b><br><sub>56 votes sur Hugging Face</sub></td>
+<td width="176" valign="top"><a href="https://huggingface.co/papers/2611.27193"><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.27193.png" width="160" alt=""></a></td>
+<td valign="top"><sub>PAPER</sub><br><b><a href="https://huggingface.co/papers/2611.27193">cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction</a></b><br><sub>82 votes sur Hugging Face</sub></td>
 </tr>
 <tr>
-<td width="176" valign="top"><a href="https://github.com/bookwjitchieni1986/blender-ai-mcp-addon"><img src="https://opengraph.githubassets.com/1/bookwjitchieni1986/blender-ai-mcp-addon" width="160" alt=""></a></td>
-<td valign="top"><sub>REPO</sub><br><b><a href="https://github.com/bookwjitchieni1986/blender-ai-mcp-addon">bookwjitchieni1986/blender-ai-mcp-addon</a></b><br><sub>2744 étoiles sur GitHub</sub></td>
+<td width="176" valign="top"><a href="https://github.com/pierridotite/mobile-agent-testers"><img src="https://opengraph.githubassets.com/1/pierridotite/mobile-agent-testers" width="160" alt=""></a></td>
+<td valign="top"><sub>REPO</sub><br><b><a href="https://github.com/pierridotite/mobile-agent-testers">pierridotite/mobile-agent-testers</a></b><br><sub>1307 étoiles sur GitHub</sub></td>
 </tr>
 <tr>
-<td colspan="2" valign="top"><sub>ANNONCE</sub><br><b><a href="https://openai.com/index/perplexity-and-intelligence">Perplexity and Intelligence</a></b><br><sub>OpenAI</sub></td>
+<td colspan="2" valign="top"><sub>ANNONCE</sub><br><b><a href="https://huggingface.co/blog/agentic-evals">How to build and maintain an agentic evaluation</a></b><br><sub>Hugging Face</sub></td>
 </tr>
 <tr>
-<td width="176" valign="top"><a href="https://www.actuia.com/actualite/mistral-fait-de-singapour-son-siege-asie-pacifique-et-un-pole-de-recherche/"><img src="https://www.actuia.com/storage/uploads/generated/11608-iev1hbrn-1200.jpg" width="160" alt=""></a></td>
-<td valign="top"><sub>EN FRANÇAIS</sub><br><b><a href="https://www.actuia.com/actualite/mistral-fait-de-singapour-son-siege-asie-pacifique-et-un-pole-de-recherche/">Mistral fait de Singapour son siège Asie-Pacifique et un pôle de recherche</a></b><br><sub>ActuIA</sub></td>
+<td width="176" valign="top"><a href="https://www.actuia.com/actualite/les-agents-dopenai-surveillent-mieux-les-entrainements-quils-ne-codent/"><img src="https://www.actuia.com/storage/uploads/generated/11610-kxblp67x-1200.jpg" width="160" alt=""></a></td>
+<td valign="top"><sub>EN FRANÇAIS</sub><br><b><a href="https://www.actuia.com/actualite/les-agents-dopenai-surveillent-mieux-les-entrainements-quils-ne-codent/">Les agents d&#x27;OpenAI surveillent mieux les entraînements qu&#x27;ils ne codent</a></b><br><sub>ActuIA</sub></td>
 </tr>
 </table>
 
@@ -58,19 +58,8 @@ Les dernières publications des labos et des blogs spécialisés.
 
 | Article | Source | Date |
 |---|---|---|
-| [Perplexity and Intelligence](https://openai.com/index/perplexity-and-intelligence) | OpenAI | 22 nov. 2026 |
-| [Combatting adversarial distillation](https://openai.com/index/combatting-adversarial-distillation) | OpenAI | 20 nov. 2026 |
-| [Can AI help scientists identify promising drug candidates?](https://openai.com/index/introducing-medchembench) | OpenAI | 20 nov. 2026 |
-| [Introducing Gemini 4 Neon](https://deepmind.google/blog/introducing-gemini-4-neon/) | Google DeepMind | 18 nov. 2026 |
-| [Genie 4 is now available](https://deepmind.google/blog/genie-4-is-now-available/) | Google DeepMind | 18 nov. 2026 |
-| [How Google Duplex evolved to also call businesses for you in Gemini](https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/) | Google Research | 20 nov. 2026 |
-| [A game you cannot win unless you have a quantum computer](https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer/) | Google Research | 19 nov. 2026 |
-| [Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup](https://huggingface.co/blog/inkling2mini) | Hugging Face | 20 nov. 2026 |
-| [Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost](https://huggingface.co/blog/harness-adapters-at-scale) | Hugging Face | 20 nov. 2026 |
-| [DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency](https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin) | Hugging Face | 18 nov. 2026 |
-| [Muru](https://simonwillison.net/2026/Nov/21/muru/) | Simon Willison | 21 nov. 2026 |
-| [Token fraud is here and it’s BAD (YouTube)](https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/) | Simon Willison | 20 nov. 2026 |
-| [PostgreSQL 19 Released](https://simonwillison.net/2026/Nov/19/postgresql-19/) | Simon Willison | 19 nov. 2026 |
+| [How to build and maintain an agentic evaluation](https://huggingface.co/blog/agentic-evals) | Hugging Face | 23 nov. 2026 |
+| [Select Styling Specimens](https://simonwillison.net/2026/Nov/22/select-styling/) | Simon Willison | 22 nov. 2026 |
 
 <a name="en-francais"></a>
 
@@ -80,9 +69,9 @@ L'actualité de l'IA dans la presse spécialisée francophone.
 
 | Article | Source | Date |
 |---|---|---|
-| [Mistral fait de Singapour son siège Asie-Pacifique et un pôle de recherche](https://www.actuia.com/actualite/mistral-fait-de-singapour-son-siege-asie-pacifique-et-un-pole-de-recherche/) | ActuIA | 20 nov. 2026 |
-| [Styliser son raisonnement rend un modèle d'IA moins surveillable](https://www.actuia.com/actualite/styliser-son-raisonnement-rend-un-modele-dia-moins-surveillable/) | ActuIA | 20 nov. 2026 |
-| [Microsoft lance une initiative pour rendre les agents d'IA vérifiables](https://www.actuia.com/actualite/microsoft-lance-une-initiative-pour-rendre-les-agents-dia-verifiables/) | ActuIA | 19 nov. 2026 |
+| [Les agents d'OpenAI surveillent mieux les entraînements qu'ils ne codent](https://www.actuia.com/actualite/les-agents-dopenai-surveillent-mieux-les-entrainements-quils-ne-codent/) | ActuIA | 23 nov. 2026 |
+| [OpenRouter durcit son option Zero Data Retention après l'enquête de Dragos](https://www.actuia.com/actualite/openrouter-durcit-son-option-zero-data-retention-apres-lenquete-de-dragos/) | ActuIA | 23 nov. 2026 |
+| [La résolution mondiale sur l'IA à l'école vise d'abord les éditeurs](https://www.actuia.com/actualite/la-resolution-mondiale-sur-lia-a-lecole-vise-dabord-les-editeurs/) | ActuIA | 23 nov. 2026 |
 
 <a name="papers"></a>
 
@@ -92,14 +81,12 @@ Les papers de recherche les plus votés par la communauté Hugging Face.
 
 | Paper | Votes | Lien |
 |---|---|---|
-| [WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection](https://huggingface.co/papers/2611.21373) | 56 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.21373) |
-| [Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation](https://huggingface.co/papers/2611.26444) | 53 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.26444) |
-| [WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding](https://huggingface.co/papers/2611.26409) | 45 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.26409) |
-| [Probing the "Conscious" Mind: Selective Access and Global Workspace in Vision-Language Models](https://huggingface.co/papers/2611.26590) | 43 votes | [arXiv](https://arxiv.org/abs/2611.26590) |
-| [Posterior Matching Distillation](https://huggingface.co/papers/2611.26629) | 39 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.26629) |
-| [Coda-DaVinci: Reimagining Video Generation with Code2Video](https://huggingface.co/papers/2611.26595) | 38 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.26595) |
-| [Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth](https://huggingface.co/papers/2611.26603) | 33 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.26603) |
-| [The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation](https://huggingface.co/papers/2611.21383) | 33 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.21383) |
+| [cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction](https://huggingface.co/papers/2611.27193) | 82 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.27193) |
+| [Non-penetrating World Models](https://huggingface.co/papers/2611.27963) | 53 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.27963) |
+| [Clover-35B-A3B-Preview Technical Report](https://huggingface.co/papers/2611.24636) | 34 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.24636) |
+| [HiUni: Harmonizing Understanding and Generation in Shared Visual Space](https://huggingface.co/papers/2611.26107) | 25 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.26107) |
+| [AltRA-Test: An Alternative Annotator Test for LLM Judges Without Shared Annotators](https://huggingface.co/papers/2611.26073) | 23 votes | [arXiv](https://arxiv.org/abs/2611.26073) |
+| [RL Post-Training in Diffusion Transformers Is Activation Steering](https://huggingface.co/papers/2611.26627) | 22 votes | [arXiv](https://arxiv.org/abs/2611.26627) |
 
 <a name="discussions"></a>
 
@@ -109,14 +96,8 @@ Les sujets IA qui font réagir sur Hacker News.
 
 | Sujet | Points | Discussion |
 |---|---|---|
-| [Anthropic’s Nasdaq debut](https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/) | 1140 points | [2328 commentaires](https://news.ycombinator.com/item?id=50562754) |
-| [Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) | 1064 points | [775 commentaires](https://news.ycombinator.com/item?id=50552424) |
-| [Frostbite: A new CPU architecture discovered, designed and verified by AI](https://architectlabs.com/blog/frostbite) | 675 points | [362 commentaires](https://news.ycombinator.com/item?id=50572503) |
-| [Fuck Your AI Safeguards](https://ounapuu.ee/posts/2026/11/19/unsafeguards/) | 616 points | [249 commentaires](https://news.ycombinator.com/item?id=50562262) |
-| [Restricting AI agents in mobile operating systems platforms from capturing data](https://signal.org/blog/protecting-your-privacy/) | 577 points | [345 commentaires](https://news.ycombinator.com/item?id=50572348) |
-| [Claude solves two open problems in the physics of black holes](https://www.anthropic.com/research/claude-black-hole-physics) | 573 points | [274 commentaires](https://news.ycombinator.com/item?id=50563148) |
-| [87% of the Anthropic power will come from gas and 11% from coal in 2028](https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/) | 548 points | [620 commentaires](https://news.ycombinator.com/item?id=50597612) |
-| [Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day](https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off) | 523 points | [915 commentaires](https://news.ycombinator.com/item?id=50574383) |
+| [GLM-5.4: Toward Generalized Coding with Our First Loop Transformer](https://z.ai/blog/glm-5.4) | 667 points | [250 commentaires](https://news.ycombinator.com/item?id=50609685) |
+| [A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth](https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth) | 660 points | [268 commentaires](https://news.ycombinator.com/item?id=50603845) |
 
 <a name="repos"></a>
 
@@ -126,14 +107,12 @@ Des repos IA récents qui gagnent vite des étoiles sur GitHub.
 
 | Repo | Étoiles | Description |
 |---|---|---|
-| [bookwjitchieni1986/blender-ai-mcp-addon](https://github.com/bookwjitchieni1986/blender-ai-mcp-addon) | 2744 étoiles | AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent... |
-| [agentes-chat/agentes-chat](https://github.com/agentes-chat/agentes-chat) | 1936 étoiles | TypeScript · Open-source, self-hosted Slack alternative where your team and AI agents work together... |
-| [sybil-solutions/inference-optimisation-skill](https://github.com/sybil-solutions/inference-optimisation-skill) | 1911 étoiles | Python · Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding,... |
-| [JosssphZhou/poki](https://github.com/JosssphZhou/poki) | 1829 étoiles | Swift · Poki uses your iPhone like you do. An open-source agent app that runs on your iPhone,... |
-| [voyager-so/vork](https://github.com/voyager-so/vork) | 1687 étoiles | Rust · Headless 3D and VFX engine for agents. Research preview. |
-| [EL4CTEO/fast-anything](https://github.com/EL4CTEO/fast-anything) | 1509 étoiles | Rust · Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby... |
-| [alexeyw/lot-map](https://github.com/alexeyw/lot-map) | 1123 étoiles | TypeScript · Lot Map for Claude Code: a live map beside the chat that shows what the agent is... |
-| [dabingfy-dot/solo-to-team-skills](https://github.com/dabingfy-dot/solo-to-team-skills) | 1094 étoiles | HTML · Human-led MAS toolkit: 16 roles, 6 group templates, four platform bundles,... |
+| [pierridotite/mobile-agent-testers](https://github.com/pierridotite/mobile-agent-testers) | 1307 étoiles | Python · 20 AI testers on 20 different phones, in parallel, on GitHub's free runners: Claude... |
+| [Dodaios/ste80-humanizer](https://github.com/Dodaios/ste80-humanizer) | 1096 étoiles | Python · STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to... |
+
+## Éditions précédentes
+
+- [22 novembre 2026](editions/2026-11-22.md)
 
 <details>
 <summary>Sources suivies</summary>
