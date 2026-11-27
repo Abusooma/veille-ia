@@ -6,14 +6,14 @@
 
 <p>Annonces des labos · Papers de recherche · Discussions · Repos GitHub · Actualité en français</p>
 
-<p><sub>ÉDITION DU 25 NOVEMBRE 2026</sub></p>
+<p><sub>ÉDITION DU 27 NOVEMBRE 2026</sub></p>
 
 <table>
 <tr>
-<td align="center" width="140"><h3>16</h3><sub>articles</sub></td>
+<td align="center" width="140"><h3>8</h3><sub>articles</sub></td>
 <td align="center" width="140"><h3>8</h3><sub>papers</sub></td>
 <td align="center" width="140"><h3>5</h3><sub>discussions</sub></td>
-<td align="center" width="140"><h3>2</h3><sub>repos</sub></td>
+<td align="center" width="140"><h3>4</h3><sub>repos</sub></td>
 </tr>
 </table>
 
@@ -31,23 +31,22 @@
 
 <table>
 <tr>
-<td colspan="2" valign="top"><sub>DISCUSSION</sub><br><b><a href="https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/">LLM agents work for their parent companies, not for you</a></b><br><sub>997 points sur Hacker News</sub></td>
+<td colspan="2" valign="top"><sub>DISCUSSION</sub><br><b><a href="https://janlukas.blog/posts/ai-self-hosting">AI made self-hosting fun again</a></b><br><sub>907 points sur Hacker News</sub></td>
 </tr>
 <tr>
-<td width="176" valign="top"><a href="https://huggingface.co/papers/2611.25403"><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.25403.png" width="160" alt=""></a></td>
-<td valign="top"><sub>PAPER</sub><br><b><a href="https://huggingface.co/papers/2611.25403">Antom 3-in-1 Transformer: A Payment Foundation Model</a></b><br><sub>100 votes sur Hugging Face</sub></td>
+<td width="176" valign="top"><a href="https://huggingface.co/papers/2611.34051"><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2611.34051.png" width="160" alt=""></a></td>
+<td valign="top"><sub>PAPER</sub><br><b><a href="https://huggingface.co/papers/2611.34051">Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability</a></b><br><sub>124 votes sur Hugging Face</sub></td>
 </tr>
 <tr>
-<td width="176" valign="top"><a href="https://github.com/mankidev/antialgorithm"><img src="https://opengraph.githubassets.com/1/mankidev/antialgorithm" width="160" alt=""></a></td>
-<td valign="top"><sub>REPO</sub><br><b><a href="https://github.com/mankidev/antialgorithm">mankidev/antialgorithm</a></b><br><sub>878 étoiles sur GitHub</sub></td>
+<td width="176" valign="top"><a href="https://github.com/opensetlabs/openset-llm"><img src="https://opengraph.githubassets.com/1/opensetlabs/openset-llm" width="160" alt=""></a></td>
+<td valign="top"><sub>REPO</sub><br><b><a href="https://github.com/opensetlabs/openset-llm">opensetlabs/openset-llm</a></b><br><sub>2089 étoiles sur GitHub</sub></td>
 </tr>
 <tr>
-<td width="176" valign="top"><a href="https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/"><img src="https://storage.googleapis.com/gweb-research2023-media/original_images/VerifiableSocialReasoning1-UserMediatedReality.png" width="160" alt=""></a></td>
-<td valign="top"><sub>ANNONCE</sub><br><b><a href="https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/">Verifiable Social Reasoning for LLM Assistants</a></b><br><sub>Google Research</sub></td>
+<td colspan="2" valign="top"><sub>ANNONCE</sub><br><b><a href="https://huggingface.co/blog/video-trainium3">Taking Trainium3 to the Track: Generating Videos with LTX-2.5</a></b><br><sub>Hugging Face</sub></td>
 </tr>
 <tr>
-<td width="176" valign="top"><a href="https://www.actuia.com/actualite/bulle-de-lia-qui-paiera-la-note-si-elle-eclate/"><img src="https://www.actuia.com/storage/uploads/generated/11632-c58cmcbl-1200.jpg" width="160" alt=""></a></td>
-<td valign="top"><sub>EN FRANÇAIS</sub><br><b><a href="https://www.actuia.com/actualite/bulle-de-lia-qui-paiera-la-note-si-elle-eclate/">Bulle de l&#x27;IA : qui paiera la note si elle éclate ?</a></b><br><sub>ActuIA</sub></td>
+<td width="176" valign="top"><a href="https://www.actuia.com/actualite/si-lia-produit-moins-cher-comment-peut-elle-detruire-de-la-valeur/"><img src="https://www.actuia.com/storage/uploads/generated/11633-vvxswfl2-1200.jpg" width="160" alt=""></a></td>
+<td valign="top"><sub>EN FRANÇAIS</sub><br><b><a href="https://www.actuia.com/actualite/si-lia-produit-moins-cher-comment-peut-elle-detruire-de-la-valeur/">L&#x27;IA moins chère peut-elle appauvrir tout le monde ?</a></b><br><sub>ActuIA</sub></td>
 </tr>
 </table>
 
@@ -59,19 +58,12 @@ Les dernières publications des labos et des blogs spécialisés.
 
 | Article | Source | Date |
 |---|---|---|
-| [GPT-6 models demonstrate intrinsic protein-design capabilities](https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities) | OpenAI | 24 nov. 2026 |
-| [Searching for distant planets with Astra](https://openai.com/index/searching-for-distant-planets-with-astra) | OpenAI | 24 nov. 2026 |
-| [OpenAI and Cisco introduce Shirudo](https://openai.com/index/introducing-shirudo) | OpenAI | 23 nov. 2026 |
-| [From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity](https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/) | Google DeepMind | 24 nov. 2026 |
-| [Finding faster quantum algorithms with agents and formal verification](https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/) | Google DeepMind | 23 nov. 2026 |
-| [Verifiable Social Reasoning for LLM Assistants](https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/) | Google Research | 25 nov. 2026 |
-| [Supercharging transformer residual connections](https://research.google/blog/supercharging-transformer-residual-connections/) | Google Research | 23 nov. 2026 |
-| [Where scientists draw the line on AI agents](https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents) | Hugging Face | 25 nov. 2026 |
-| [An Indic Voice Agent with CUGA](https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga) | Hugging Face | 25 nov. 2026 |
-| [Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000](https://huggingface.co/blog/inkling-2-mini-inference-hillclimb) | Hugging Face | 25 nov. 2026 |
-| [Three LLM inflection points in twelve months](https://simonwillison.net/2026/Nov/24/llm-inflection-points/) | Simon Willison | 24 nov. 2026 |
-| [datasette-charts 0.2a0](https://simonwillison.net/2026/Nov/24/datasette-charts/) | Simon Willison | 24 nov. 2026 |
-| [datasette-agent 0.7a1](https://simonwillison.net/2026/Nov/24/datasette-agent/) | Simon Willison | 24 nov. 2026 |
+| [Taking Trainium3 to the Track: Generating Videos with LTX-2.5](https://huggingface.co/blog/video-trainium3) | Hugging Face | 27 nov. 2026 |
+| [Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon](https://huggingface.co/blog/ggml-org/llamacpp-amd-bench) | Hugging Face | 26 nov. 2026 |
+| [Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference](https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin) | Hugging Face | 26 nov. 2026 |
+| [sqlite3_rsync: Database Remote-Copy Tool For SQLite](https://simonwillison.net/2026/Nov/26/sqlite3-rsync/) | Simon Willison | 26 nov. 2026 |
+| [The New York Times warns photographers not to update Photoshop over AI features](https://simonwillison.net/2026/Nov/26/hn-50651685/) | Simon Willison | 26 nov. 2026 |
+| [datasette-charts 0.3a0](https://simonwillison.net/2026/Nov/25/datasette-charts/) | Simon Willison | 25 nov. 2026 |
 
 <a name="en-francais"></a>
 
@@ -81,9 +73,8 @@ L'actualité de l'IA dans la presse spécialisée francophone.
 
 | Article | Source | Date |
 |---|---|---|
-| [Bulle de l'IA : qui paiera la note si elle éclate ?](https://www.actuia.com/actualite/bulle-de-lia-qui-paiera-la-note-si-elle-eclate/) | ActuIA | 25 nov. 2026 |
-| [À Choose France, les 3 milliards de centres de données datent de juillet](https://www.actuia.com/actualite/a-choose-france-les-3-milliards-de-centres-de-donnees-datent-de-juillet/) | ActuIA | 24 nov. 2026 |
-| [De la stratégie aux usages métiers : quelles compétences pour piloter et déployer l’intelligence artificielle ?](https://www.actuia.com/actualite/de-la-strategie-aux-usages-metiers-quelles-competences-pour-piloter-et-deployer-lintelligence-artificielle-1/) | ActuIA | 24 nov. 2026 |
+| [L'IA moins chère peut-elle appauvrir tout le monde ?](https://www.actuia.com/actualite/si-lia-produit-moins-cher-comment-peut-elle-detruire-de-la-valeur/) | ActuIA | 26 nov. 2026 |
+| [OpenAI revendique une limite de vitesse pour le calcul qui fait tourner l'IA](https://www.actuia.com/actualite/openai-revendique-une-limite-de-vitesse-pour-le-calcul-qui-fait-tourner-lia/) | ActuIA | 26 nov. 2026 |
 
 <a name="papers"></a>
 
@@ -93,14 +84,14 @@ Les papers de recherche les plus votés par la communauté Hugging Face.
 
 | Paper | Votes | Lien |
 |---|---|---|
-| [Antom 3-in-1 Transformer: A Payment Foundation Model](https://huggingface.co/papers/2611.25403) | 100 votes | [arXiv](https://arxiv.org/abs/2611.25403) |
-| [Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe](https://huggingface.co/papers/2611.32884) | 87 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.32884) |
-| [Rewirable Circuits in Transformers with Loom Attention](https://huggingface.co/papers/2611.30634) | 86 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.30634) |
-| [Don't Sleep, Keep Watch: Proactive Perception for Computer-Use Agents](https://huggingface.co/papers/2611.28947) | 84 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.28947) |
-| [Nemotron-Labs-VisualCreation: Pixel as Code for Agentic Visual Creation](https://huggingface.co/papers/2611.31358) | 79 votes | [arXiv](https://arxiv.org/abs/2611.31358) |
-| [ACAP: Asynchronous Coding Agents for Efficient Robot Control](https://huggingface.co/papers/2611.31205) | 61 votes | [arXiv](https://arxiv.org/abs/2611.31205) |
-| [Self-Evolving Evaluation Environments for Computer-Use Agents](https://huggingface.co/papers/2611.30962) | 45 votes | [arXiv](https://arxiv.org/abs/2611.30962) |
-| [LingSante MedGuard Technical Report](https://huggingface.co/papers/2611.25509) | 34 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.25509) |
+| [Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability](https://huggingface.co/papers/2611.34051) | 124 votes | [arXiv](https://arxiv.org/abs/2611.34051) |
+| [OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms](https://huggingface.co/papers/2611.34232) | 98 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.34232) |
+| [Mixture-of-Loops Transformer](https://huggingface.co/papers/2611.34923) | 73 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.34923) |
+| [What a Forecasting Leaderboard Can Establish: Resolution Reporting for Zero-Shot Time-Series Models](https://huggingface.co/papers/2611.31619) | 52 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.31619) |
+| [ProxyGenBench: Benchmarking Proxy-Guided Video Generation](https://huggingface.co/papers/2611.34457) | 36 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.34457) |
+| [Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts](https://huggingface.co/papers/2611.28732) | 34 votes | [arXiv](https://arxiv.org/abs/2611.28732) |
+| [DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding](https://huggingface.co/papers/2611.34420) | 28 votes · code disponible | [arXiv](https://arxiv.org/abs/2611.34420) |
+| [Solve Vision with Code: Coding Agents Are Stronger Visual Reasoners Than Video Models](https://huggingface.co/papers/2611.34813) | 27 votes | [arXiv](https://arxiv.org/abs/2611.34813) |
 
 <a name="discussions"></a>
 
@@ -110,11 +101,11 @@ Les sujets IA qui font réagir sur Hacker News.
 
 | Sujet | Points | Discussion |
 |---|---|---|
-| [LLM agents work for their parent companies, not for you](https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/) | 997 points | [409 commentaires](https://news.ycombinator.com/item?id=50627340) |
-| [Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?](https://news.ycombinator.com/item?id=50630809) | 432 points | [326 commentaires](https://news.ycombinator.com/item?id=50630809) |
-| [Anthropic breaks below $83 IPO price](https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading) | 418 points | [789 commentaires](https://news.ycombinator.com/item?id=50627836) |
-| [PenGPT: A Generative Transformer for Handwriting and Sketches](https://greydanus.github.io/2026/11/12/pengpt/) | 377 points | [75 commentaires](https://news.ycombinator.com/item?id=50637056) |
-| [Show HN: I built a game where you are an LLM's subagent](https://github.com/gulivan/worker755) | 360 points | [90 commentaires](https://news.ycombinator.com/item?id=50599762) |
+| [AI made self-hosting fun again](https://janlukas.blog/posts/ai-self-hosting) | 907 points | [443 commentaires](https://news.ycombinator.com/item?id=50660180) |
+| [The New York Times warns photographers not to update Photoshop over AI features](https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features) | 676 points | [538 commentaires](https://news.ycombinator.com/item?id=50647673) |
+| [Much shorter version of GRH Lean verification from Anthropic](https://github.com/lsernau/grh-lean) | 558 points | [356 commentaires](https://news.ycombinator.com/item?id=50648050) |
+| [The group chat where your AI talks behind your back](https://construct22.com/) | 501 points | [218 commentaires](https://news.ycombinator.com/item?id=50663595) |
+| [OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster](https://twitter.com/thsottiaux/status/2125784147889393806) | 499 points | [271 commentaires](https://news.ycombinator.com/item?id=50651117) |
 
 <a name="repos"></a>
 
@@ -124,11 +115,14 @@ Des repos IA récents qui gagnent vite des étoiles sur GitHub.
 
 | Repo | Étoiles | Description |
 |---|---|---|
-| [mankidev/antialgorithm](https://github.com/mankidev/antialgorithm) | 878 étoiles | Python · Agent skill that steers the model away from its first, most average pick in creative... |
-| [boringmarketer/boring-marketing-skills](https://github.com/boringmarketer/boring-marketing-skills) | 856 étoiles | Python · 32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO,... |
+| [opensetlabs/openset-llm](https://github.com/opensetlabs/openset-llm) | 2089 étoiles | Python · Fast local LLM inference on plain CPUs. No GPU, 8 GB of RAM. OpenAI-compatible server. |
+| [nexu-io/opengame](https://github.com/nexu-io/opengame) | 1939 étoiles | TypeScript · The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to... |
+| [alesha-pro/llm.asm](https://github.com/alesha-pro/llm.asm) | 1915 étoiles | Assembly · Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch... |
+| [sous-labs/songe](https://github.com/sous-labs/songe) | 921 étoiles | Python · A training engine for your local model, using your idle compute |
 
 ## Éditions précédentes
 
+- [25 novembre 2026](editions/2026-11-25.md)
 - [23 novembre 2026](editions/2026-11-23.md)
 - [22 novembre 2026](editions/2026-11-22.md)
 
